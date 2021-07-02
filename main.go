@@ -13,7 +13,7 @@ import (
 func main(){
 
 	bootstrap.Init()
-	
+
 	app := fiber.New()
 
 	app.Use(cors.New(cors.Config{AllowCredentials: true}))
@@ -22,5 +22,5 @@ func main(){
 
 	app.Static("/", "./client/build")
 
-	app.Listen(":8000")
+	app.Listen(":8081")
 }
