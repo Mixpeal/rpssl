@@ -4,9 +4,13 @@ LABEL base.name = "rpssl"
 
 WORKDIR /app
 
+COPY go.mod go.sum ./
+
+RUN go mod download
+
 copy . .
 
-RUN go build -o main
+RUN go build -o main .
 
 EXPOSE 8080
 
