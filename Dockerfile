@@ -12,6 +12,6 @@ copy . .
 
 RUN go build -o main .
 
-EXPOSE 80
+EXPOSE 8081
 
 ENTRYPOINT ["./main"]
