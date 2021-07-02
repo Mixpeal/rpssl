@@ -22,5 +22,5 @@ func main(){
 
 	app.Static("/", "./client/build")
 
-	app.Listen(":8081")
+	app.Listen(":8080")
 }
