@@ -1,6 +1,6 @@
 import {
     BrowserRouter as Router,
-    Link
+    Link, NavLink
   } from "react-router-dom";
 
 export default function Header(){
@@ -11,11 +11,11 @@ export default function Header(){
 
             <div>
                 <ul className="flex space-x-6 text-sm">
-                <li className="py-4 border-t-4 border-blue-500">
-                    <Link to="/" className="font-medium text-txt-medium">Single Player</Link>
+                <li className="">
+                    <NavLink exact to="/" className="block py-4 border-t-2 border-transparent" activeClassName="border-blue-500 font-medium text-txt-high">Single Player</NavLink>
                 </li>
-                <li className="py-4 border-t-4 border-transparent">
-                    <Link to="/multi" className="text-txt-low">Multi Player</Link>
+                <li className="">
+                    <NavLink exact to="/multi" className="block py-4 border-t-2 border-transparent" activeClassName="border-blue-500 font-medium text-txt-high">Multi Player</NavLink>
                 </li>
                 </ul>
             </div>

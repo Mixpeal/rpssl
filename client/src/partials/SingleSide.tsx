@@ -9,22 +9,22 @@ export default function SingleSide() {
                 <div className="border bg-gray-50 rounded-lg px-4 py-2 mb-2">
                     <div className="flex items-center justify-between">
                         <div className="flex items-center">
-                            <div className="">01</div>
+                            <div className="text-txt-low">01</div>
                             <div className="ml-4 font-medium">You win</div>
                         </div>
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
                         </svg>
                     </div>
                 </div>
                 <div className="border bg-gray-50 rounded-lg px-4 py-2 mb-2">
                     <div className="flex items-center justify-between">
                         <div className="flex items-center">
-                            <div className="">01</div>
+                            <div className="text-txt-low">01</div>
                             <div className="ml-4 font-medium">You win</div>
                         </div>
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
                         </svg>
                     </div>
                 </div>
