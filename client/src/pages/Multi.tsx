@@ -3,6 +3,7 @@ import ButtonMp from '../partials/ButtonMp'
 
 class Multi extends React.Component<any, any> {
     render() {
+        
         return (
             <section>
                 <div className="mt-10 text-txt-low">Welcome to Rock.Paper.Scissors.Lizard.Spock Game</div>

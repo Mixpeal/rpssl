@@ -88,7 +88,10 @@ function App() {
           mpSetResults([data, ...mpresults])
           mpSetLoading(false)
         })
-        .catch(error => mpSetLoading(false));
+        .catch(error => { 
+          mpSetLoading(false)
+          setPlayerTwo(0)
+        });
   } 
 
   const mpClearScores = () => {
