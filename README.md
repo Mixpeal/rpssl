@@ -17,10 +17,10 @@ A Rock Paper Scissors Lizard Spock web application built with Go, React JS and T
 
 ## Available Endpoints.
 
-| Endpoint | Description | Method | 
+| Endpoint | Description | Method | Params | 
 |--------|-------------|-------------|
-| [/choices](https://rpssl.mixpeal.com/choices) | Lists the available choices. | GET |
-| [/choice](https://rpssl.mixpeal.com/choice) | Get a randomly generated choice. | GET |
-| [/play](https://rpssl.mixpeal.com/play) | Play a round against a computer opponent. | POST |
-| [/play-multi](https://rpssl.mixpeal.com/play-multi) | Play a round against another player. | POST |
+| [/choices](https://rpssl.mixpeal.com/choices) | Lists the available choices. | GET | - |
+| [/choice](https://rpssl.mixpeal.com/choice) | Get a randomly generated choice. | GET | - |
+| [/play](https://rpssl.mixpeal.com/play) | Play a round against a computer opponent. | POST | player |
+| [/play-multi](https://rpssl.mixpeal.com/play-multi) | Play a round against another player. | POST | player_one, player_two |
 
