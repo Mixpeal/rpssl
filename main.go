@@ -17,8 +17,8 @@ func main() {
 
 	routes.Setup(app)
 
-	app.Static("*", "./client/build")
-	// app.Static("/multi", "./client/build")
+	app.Static("/", "./client/build")
+	app.Static("/multi", "./client/build")
 
 	app.Listen(":8080")
 }
