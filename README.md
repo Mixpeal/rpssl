@@ -3,7 +3,7 @@
 A Rock Paper Scissors Lizard Spock web application built with Go, React JS and Tailwind CSS.
 
 ## Demo URL:
-[Demo Application](https://rpssl.mixpeal.com){:target="_blank"}
+<a href="https://rpssl.mixpeal.com" target="_blank">Demo Application</a>
 
 ## Screenshot:
 
