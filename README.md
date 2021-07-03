@@ -3,7 +3,7 @@
 A Rock Paper Scissors Lizard Spock web application built with Go, React JS and Tailwind CSS.
 
 ## Demo URL:
-[Demo Application](https://rpssl.mixpeal.com)
+[Demo Application](https://rpssl.mixpeal.com){:target="_blank"}
 
 ## Screenshot:
 
@@ -19,8 +19,8 @@ A Rock Paper Scissors Lizard Spock web application built with Go, React JS and T
 
 | Endpoint | Description | Method | Params | 
 |--------|-------------|-------------|-------------|
-| [/choices](https://rpssl.mixpeal.com/choices) | Lists the available choices. | GET | - |
-| [/choice](https://rpssl.mixpeal.com/choice) | Get a randomly generated choice. | GET | - |
-| [/play](https://rpssl.mixpeal.com/play) | Play a round against a computer opponent. | POST | player |
-| [/play-multi](https://rpssl.mixpeal.com/play-multi) | Play a round against another player. | POST | player_one, player_two |
+| [/choices](https://rpssl.mixpeal.com/choices){:target="_blank"} | Lists the available choices. | GET | - |
+| [/choice](https://rpssl.mixpeal.com/choice){:target="_blank"} | Get a randomly generated choice. | GET | - |
+| [/play](https://rpssl.mixpeal.com/play){:target="_blank"} | Play a round against a computer opponent. | POST | player |
+| [/play-multi](https://rpssl.mixpeal.com/play-multi){:target="_blank"} | Play a round against another player. | POST | player_one, player_two |
 
