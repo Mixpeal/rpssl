@@ -1,10 +1,10 @@
 import React from 'react';
 
-class SingleSide extends React.Component<any, any> {
+class MultiSide extends React.Component<any, any> {
     render() {
         const cutResult = this.props.results.slice(0, 10)
-        const choose = cutResult.filter((cr: any) => cr.results === 'win' || cr.results === 'tie')
-        const victories = (choose.length / cutResult.length) * 100
+        const player_one = cutResult.filter((cr: any) => cr.results === 'win')
+        const player_two = cutResult.filter((cr: any) => cr.results === 'lose')
         return (
             <div className="lg:w-96 mt-10 lg:mt-0 bg-gray-100 lg:h-screen px-5 lg:px-10 flex flex-col justify-between">
                 <div>
@@ -18,7 +18,7 @@ class SingleSide extends React.Component<any, any> {
                                 <div className="flex items-center justify-between">
                                     <div className="flex items-center">
                                         <div className="text-txt-low">{key + 1}</div>
-                                        <div className="ml-4 font-medium">You {res.results}</div>
+                                        <div className="ml-4 font-medium">{res.results === "win" ? "Player One wins" : res.results === "tie" ? "A Tie" : "Player Two wins" }</div>
                                     </div>
                                     <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
@@ -28,7 +28,8 @@ class SingleSide extends React.Component<any, any> {
                         )) : <div className="text-sm text-txt-low">No score found</div>
                     }
 
-                    {this.props.results.length > 0 ? <div className="text-sm mt-5 font-bold text-center">{Math.round(victories)}% Victory</div> : null}
+                    {this.props.results.length > 0 ? <div className="text-sm mt-8 text-txt-low">Player One: <span className="font-bold text-txt-high">{player_one.length} Wins</span> </div> : null}
+                    {this.props.results.length > 0 ? <div className="text-sm mt-2 text-txt-low">Player Two: <span className="font-bold text-txt-high">{player_two.length} Wins</span> </div> : null}
                 </div>
                 <div className="text-f12 text-center lg:text-right mb-3 mt-10">Developed with ❤️ by <a href="https://twitter.com/mixpeal" target="_blank" rel="noreferrer" className="font-bold text-txt-high">@mixpeal</a></div>
             </div>
@@ -36,4 +37,4 @@ class SingleSide extends React.Component<any, any> {
     }
 }
 
-export default SingleSide
+export default MultiSide

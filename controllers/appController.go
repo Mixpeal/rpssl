@@ -40,18 +40,26 @@ func Play(c *fiber.Ctx) error {
 	})
 }
 
-// func processResult(p1 int, p2 int) int {
-// 	var result int
-// 	switch p1 - p2 {
-// 	default:
-// 		result = 1 // player 1 loses
-// 	case 0:
-// 		result = 2 // Tie
-// 	case -3, -2, -1, 1, 2, 4:
-// 		result = 0 // player 1 win
-// 	}
-// 	return result
-// }
+
+func PlayMulti(c *fiber.Ctx) error {
+	var data map[string]int
+
+	if err := c.BodyParser(&data); err != nil {
+		return err
+	}
+	var results = [12]string{"win", "lose", "tie"}
+	var player = data["player_one"]
+	var player_two = data["player_two"]
+
+	result := processResult(player, player_two)
+
+	return c.JSON(fiber.Map{
+		"results":  results[result],
+		"player_one":   player,
+		"player_two": player_two,
+	})
+}
+
 
 func processResult(p1 int, p2 int) int {
 	var result int

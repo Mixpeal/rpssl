@@ -9,4 +9,5 @@ func Setup(app *fiber.App) {
 	app.Get("/choices", controllers.Choices)
 	app.Get("/choice", controllers.RandomChoice)
 	app.Post("/play", controllers.Play) 
+	app.Post("/play-multi", controllers.PlayMulti) 
 }
