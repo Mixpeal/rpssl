@@ -12,7 +12,7 @@ A Rock Paper Scissors Lizard Spock web application built with Go, React JS and T
 ## Installation:
 
 * **Clone the repo to your local machine**: `git clone`
-* **Install the go packages**: `go install` 
+* **Install the go packages**: `go get` 
 * **Run the go application**: `go run main.go` 
 
 ## Available Endpoints.
